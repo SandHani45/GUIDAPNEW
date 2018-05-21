@@ -168,6 +168,7 @@ position: fixed;
   font-weight: 400;
   line-height: 56px;
   color: #fff;
+  font-weight: 900;
 }
 
 @media (max-width: 768px) {
@@ -213,7 +214,7 @@ position: fixed;
 
 #intro .product-screens {
 position: absolute;
-    top: 64%;
+    top: 5%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -239,7 +240,9 @@ position: absolute;
     transform: rotate(5deg);
    
 }
-
+#black-two{
+      padding: 52% 0 0 0;
+}
 #intro .product-screens img {
 /*  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);*/
 }
@@ -249,23 +252,29 @@ position: absolute;
     top: -60px;
     left: 141px;
 }
+.img-sec-two-res{
+      width: 477px;
+    position: relative;
+    top: 0;
+    left: 141px;
+}
 .flex{
   display: flex;
 }
 
 #intro .product-screens .product-screen-1 {
-  position: absolute;
-  z-index: 30;
-  left: calc(50% + 238px);
-  bottom: 0;
-  top: 30px;
+    position: absolute;
+    z-index: 30;
+    left: calc(50% + 238px);
+    bottom: 0;
+    top: 69%;
 }
 .button-img{
-      position: absolute;
+       position: absolute;
     z-index: 30;
     /* left: calc(50% + 238px); */
     /* bottom: 0; */
-    /* top: 30px; */
+    /*top: 83%;*/
     left: 0;
 }
 #intro .product-screens .product-screen-2 {
@@ -277,22 +286,31 @@ position: absolute;
 }
 
 #intro .product-screens .product-screen-3 {
-position: absolute;
+    position: absolute;
     z-index: 10;
     left: calc(50% - 374px);
     bottom: 0;
-    top: 28px;
+    top: 72%;
     width: 45%;
 }
 
 @media (max-width: 767px) {
   #intro .product-screens .product-screen-1 {
     position: static;
-    padding-top: 30px;
+    padding-top: 766px;
   }
   #intro .product-screens .product-screen-2, #intro .product-screens .product-screen-3 {
     display: none;
   }
+.button-img{
+    position: absolute;
+    z-index: 30;
+    /* left: calc(50% + 238px); */
+    /* bottom: 0; */
+    top: 83%;
+    left: 84px;
+}
+
 }
 p {
     padding: 0;
@@ -744,7 +762,18 @@ font-weight: 900;
 .mg-top{
 margin-top: -100px;
 }
-
+.mg-top-reservation{
+      margin-top: 38px;
+}
+.pink-background{
+  background: #c31353;
+    position: relative;
+    top: 17px;
+    left: -21px;
+    z-index: 0;
+    margin: 0!important;
+    padding: 9px;
+}
 #advanced-features i {
   color: #666666;
   font-size: 64px;
@@ -1344,14 +1373,28 @@ a {
       padding: 75px 0 700px 0;
     overflow: hidden;
 }
+.unsite{
+      padding: 0 0 700px 0;
+    overflow: hidden;
+}
 .pd-center{
       padding: 18px 0 151px 70px;
+}
+.pd-center-regester{
+  padding: 18px 0 0 70px;
 }
 .sec-card{
     padding: 28px 30px 45px 30px;
     background-color: #7352ba;
 }
+.sec-card-reservation{
+    padding: 28px 30px 45px 30px;
+    background-color: #1a6260;
+}
 .sec-card .img{
+      padding: 1px 1px 26px 1px;
+}
+.sec-card-reservation .img{
       padding: 1px 1px 26px 1px;
 }
 .pd-16{
@@ -1374,10 +1417,18 @@ a {
 .mark-img-2 img{
   width: 100px;
 }
+.mark-img-2-res{
+      position: absolute;
+        left: 361px;
+    top: -91px;
+}
+.mark-img-2-res img{
+  width: 100px;
+}
 
 .calender-background{
 /*background: #403055;*/
-    width: 90%;
+    width: 100%;
     float: left;
     position: fixed;
     left: 0;
@@ -1386,6 +1437,11 @@ a {
 }
 .calender{
     padding: 0 0 428px 0;
+    overflow: hidden;
+}
+
+.calender-res {
+    padding: 850px 0 428px 0;
     overflow: hidden;
 }
 .num{
@@ -1470,7 +1526,21 @@ background: #403055;
     position: absolute;
     left: 0;
 }
+.background-reservation{
+   background: #329887;
+
+    float: left;
+    position: absolute;
+    left: 0;
+}
+
+.top-50{
+      top: 68px;
+}
 .blue-background h5{
+  margin:6px;
+}
+.pink-background h5{
   margin:6px;
 }
 .z-index{
@@ -1480,10 +1550,23 @@ background: #403055;
     padding: 23px 0px 1px 38px;
     color: #6329b1;
 }
+.pd-pera-res{
+    padding: 23px 0px 1px 38px;
+    color: #c31353;
+}
 .img-mrg{
   margin-top: 293%;
  }
-
+.img-mrg-res{
+margin-top: 21%;
+ }
+.mg-lf {
+    margin-left: -451px;
+    display: none;
+}
+.display{
+  display: none;
+}
 @media (min-width: 576px) { 
 .background {
     background: #403055;
@@ -1492,8 +1575,19 @@ background: #403055;
     position: absolute;
     left: 0;
 }
+
+.background-reservation {
+    background: #329887;
+
+    float: left;
+    position: absolute;
+    left: 0;
+}
 .img-mrg{
   margin-top: 0%;
+ }
+ .img-mrg-res{
+margin-top: 21%;
  }
  }
 
@@ -1506,6 +1600,17 @@ background: #403055;
     position: absolute;
     left:150px;
 }
+.mg-lf{
+  margin-left: 18%;
+  display: block;
+}
+.background-reservation {
+    background: #329887;
+    width: 90%;
+    float: left;
+    position: absolute;
+    left:150px;
+}
 .img-section{
          padding: 0 0 301px 0;
          position: relative;
@@ -1513,18 +1618,28 @@ background: #403055;
 .img-mrg{
   margin-top: 0%;
  }
+ .img-mrg-res{
+margin-top: 21%;
+ }
 .img-sec-three {
     position: relative;
     top: 32px;
     left: 45px;
     z-index: 9;
 }
+.img-sec-three-res {
+position: relative;
+    top: 32px;
+    left: 109px;
+    z-index: 9;
+    padding: 6px;
+}
 .mg-side{
   margin-top: 0;
 }
 .calender-background{
 /*background: #403055;*/
-    width: 90%;
+    width: 100%;
     float: left;
     position: absolute;
     left: 0;
@@ -1570,12 +1685,30 @@ background: #403055;
     text-transform: uppercase;
 
 }
+.calender-res{
+    padding: 93px 0 428px 0;
+    overflow: hidden;
+}
+.display{
+  display: block;
+}
+
 }
 
 
 @media (min-width: 992px) { 
 .background {
     background: #403055;
+    width: 90%;
+    float: left;
+    position: absolute;
+    left:150px;
+}
+.display{
+  display: block;
+}
+..background-reservation {
+    background: #329887;
     width: 90%;
     float: left;
     position: absolute;
@@ -1619,7 +1752,7 @@ height: 122px;
 }
 .calender-background{
 /*background: #403055;*/
-    width: 90%;
+    width: 100%;
     float: left;
     position: absolute;
     left: 0;
@@ -1653,11 +1786,11 @@ height: 122px;
     text-transform: uppercase;
 
 }
+.calender-res{
+    padding: 93px 0 428px 0;
+    overflow: hidden;
 }
-
-
-
-
+}
 
 
 
@@ -1671,6 +1804,20 @@ height: 122px;
     position: absolute;
     left:150px;
 }
+.display{
+  display: block;
+}
+.calender-res{
+    padding: 93px 0 428px 0;
+    overflow: hidden;
+}
+.background-reservation {
+    background: #329887;
+    width: 90%;
+    float: left;
+    position: absolute;
+    left:150px;
+}
 .mg-side{
   margin-top: 0;
 }
@@ -1716,7 +1863,7 @@ height: 122px;
 }
 .calender-background{
 /*background: #403055;*/
-    width: 90%;
+    width: 100%;
     float: left;
     position: absolute;
     left: 0;
